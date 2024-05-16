@@ -1,2 +1,2 @@
-# algoSobrepython
+# algoSobrePython
 Códigos de Python
