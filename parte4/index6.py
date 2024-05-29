@@ -14,3 +14,49 @@ Escrever um algoritmo que vá lendo o código do item pedido, a quantidade e vá
 OBSERVAÇÃO: Use  uma  flag  para continuar no programa.
 """
 
+print("\n programa que calcula os pedidos de um restaurante\n")
+
+
+
+flag = True
+precoLanche = 0
+
+while flag:
+    codigoLanche = input("Digite o Código do Lanche: \n100 - Cachorro quente | R$2,50 \n101 - Bauru simples | R$2,00 \n102 - Bauru c/ovo | R$3,50 \n103 - Hamburger | R$5,10 \n104 - Cheeseburger | R$3,30 \n105 - Refrigerante | R$2,00\n 1 - Para pedir a Conta \n")
+
+    
+
+    if(codigoLanche == 1):
+        flag = False
+        
+    else:
+        if(codigoLanche == 100):
+            precoLanche = precoLanche + 2.5
+            
+        else:
+            if(codigoLanche == 101):
+                precoLanche = precoLanche + 2.0
+            
+            else:
+                if(codigoLanche == 102):
+                    precoLanche = precoLanche + 3.5   
+                    
+                else:
+                    if(codigoLanche == 103):
+                        precoLanche = precoLanche + 5.10
+                        
+                    else:
+                        if(codigoLanche == 104):
+                            precoLanche = precoLanche + 3.30
+                            
+                        else:
+                            if(codigoLanche == 105):
+                                precoLanche = precoLanche + 2.0
+                                
+                            else:
+                                print("Você colocou codigos Que não constam no sistema")
+                                
+    print(precoLanche)
+        
+        
+print("A Conta deu ")
